@@ -1,0 +1,8 @@
+version: '3'
+services:
+  dhcpd:
+    container_name: isc-dhcp-server
+    network_mode: "host"
+    image: networkboot/dhcpd
+    volumes:
+      - ./data:/data
